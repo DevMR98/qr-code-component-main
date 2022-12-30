@@ -1,0 +1,75 @@
+:root {
+    /*variables*/
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+    --principalFont: 'Outfit', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*10px = 1rem*/
+}
+
+/*Box sizing*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*Globals*/
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--LightGray);
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--White);
+    width: 30rem;
+    padding: 1rem;
+    margin:5rem auto;
+    border-radius: 1rem;
+}
+
+.card__image {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.card__title {
+    font-family: var(--principalFont);
+    font-weight: bold;
+    color: var(--DarkBlue);
+}
+
+.card__information {
+    font-family: var(--principalFont);
+    font-weight: 400;
+    color: var(--DarkBlue);
+    font-size: 1.5rem;
+}
+
+.card__title,
+.card__information {
+    text-align: center;
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
